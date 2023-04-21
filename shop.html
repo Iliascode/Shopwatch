@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./shop.css">
+    <title>ShopWatch</title>
+</head>
+<body>
+    <div class="wrapper">
+         <header class="header">
+             <div class="container">
+                <div class="header-inner">
+                    <a href="#" class="logo">Shop<span>Watch</span></a>
+                    <nav class="header-nav">
+                        <ul class="navlist">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#product">Product</a></li>
+                            <li><a href="#testmonial">Testmonial</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-icons">
+                        <i class='bx bx-search search'></i>
+                        <i class='bx bx-user user'></i>
+                        <i class='bx bx-shopping-bag bag'></i>
+                        <i class='bx bx-menu bar'></i>
+                    </div>
+                </div>
+                <!-- pupup input -->
+                <div class="input-box">
+                    <input type="text" placeholder="Search here....">
+                </div>
+                <!---popup window-->
+                <div class="user-popup">
+                        <div class="user-details">
+                            <h3>Log in</h3>
+                            <div class="user-form">
+                                <label for="email">Email</label>
+                                <input type="email" id="user-email" placeholder="Enter your email" required>
+                                <label for="email">Password</label>
+                                <input type="password" id="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="check" name="check">
+                            <label for="coding">Remember me</label>
+                        </div>    
+                        <div class="user-popup-btn">
+                            <button>Sign in</button>
+                        </div>
+                        <div class="forgot">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <i class='bx bx-x close-x'></i> 
+                    </div>
+                </div>
+                <!---cart window-->
+                <div class="cart">
+                    <h3 class="cart-title">Your products</h3>
+                    <div class="cart-content">
+                        <div class="cart-box">
+                                <img src="/smartwatch/picture/daniel-korpai-hbTKIbuMmBI-unsplash.jpg" alt="" class="cart-img">
+                                <div class="detail-box">
+                                    <div class="cart-product-title"></div>
+                                    <div class="cart-price"></div>
+                                    <input class="cart-quantity" type="number" value="1">
+                                </div>
+                            <i class='bx bxs-trash-alt cart-remove'></i>
+                        </div>  
+                    </div>
+                        <div class="total">
+                            <div class="total-title">Total:</div>
+                            <div class="total-price">$0</div>
+                        </div>
+                        <button class="buy-btn">Buy now</button> 
+                        <i class='bx bx-x' id="cart-close"></i>
+                    </div>
+                </div>
+            </header>
+        
+        <main class="main">
+            <section class="hero" id="home">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img class="swiper-image" src="/smartwatch/picture/slide1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="swiper-image" src="/smartwatch/picture/slide2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="swiper-image" src="/smartwatch/picture/slide3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="swiper-image" src="/smartwatch/picture/slide4.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="swiper-image" src="/smartwatch/picture/slide5.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </section>
+            <section class="servive" id="service">
+                <div class="container">
+                    <h2 class="service-title">Our Service Feature</h2>
+                    <p class="service-p">Watch companies are now focusing more on trendy<br> watches which targets the youngsters who always.</p>
+                <div class="service-content">
+
+                    <div class="service-col1">
+                        <div class="service-box">
+                            <img src="/smartwatch/picture/Group (1).svg">
+                            <h6>Music Player</h6>
+                            <p>Use the Music app</p>
+                        </div>
+                        <div class="service-box">
+                            <img src="/smartwatch/picture/Group 53.svg">
+                            <h6>Battery</h6>
+                            <p>Battery life is 18 hours</p>
+                        </div>
+                        <div class="service-box">
+                            <img src="/smartwatch/picture/Group 57.svg">
+                            <h6>Settings</h6>
+                            <p>Choose your settings.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-box">
+                        <img class="image-service" src="/smartwatch/picture/Daco_4244679 1.jpg">
+                    </div>
+
+                    <div class="service-col2">
+                        <div class="service-box">
+                            <img src="picture/Vector (1).svg">
+                            <h6>Messages</h6>
+                            <p>Open the Messages app</p>
+                        </div>
+                        <div class="service-box">
+                            <img src="/smartwatch/picture/Group.svg">
+                            <h6>Android Version</h6>
+                            <p>Android officially 10.0</p>
+                        </div>
+                        <div class="service-box">
+                            <img src="/smartwatch/picture/Vector.svg">
+                            <h6>Internet Service</h6>
+                            <p>4G Smart Watches</p>
+                        </div>
+                    </div>
+                   
+                </div>
+                </div>
+            </section>
+            <section class="product" id="product">
+                <div class="container">
+                    <h2 class="product-title">Our Available Product</h2>
+                    <p class="product-p">Watch is such a desired fashion accessory and is seen as a<br> necessary cupboard piece for both men and women.<br> Wristwatches are generally.</p>
+                    <div class="product">
+                        <div class="card">
+                            <img class="product-img" src="/smartwatch/picture/david-svihovec-HM-Y497t5CU-unsplash.jpg">
+                            <h3 class="product-name">Smartwatch 1</h3>
+                            <span class="product-price">104.02$</span>
+                            <button class="add-cart">Add to card</button>
+                        </div>
+                        <div class="card">
+                            <img class="product-img" src="/smartwatch/picture/daniel-korpai-wW7XbWYoqK8-unsplash.jpg">
+                            <h3 class="product-name">Smartwatch 2</h3>
+                            <span class="product-price">83.47$</span>
+                            <button class="add-cart">Add to card</button>
+                        </div>
+                        <div class="card">
+                            <img class="product-img" src="/smartwatch/picture/david-svihovec-BGGHiSp2Quw-unsplash.jpg">
+                            <h3 class="product-name">Smartwatch 3</h3>
+                            <span class="product-price">71$</span>
+                            <button class="add-cart">Add to card</button>
+                        </div>    
+                        <div class="card">
+                            <img class="product-img" src="/smartwatch/picture/daniel-korpai-hbTKIbuMmBI-unsplash.jpg">
+                            <h3 class="product-name">Smartwatch 4</h3>
+                            <span class="product-price">54$</span>
+                            <button class="add-cart">Add to card</button>
+                        </div>
+                        <div class="card">
+                            <img class="product-img" src="/smartwatch/picture/daniel-korpai-QhF3YGsDrYk-unsplash.jpg">
+                            <h3 class="product-name">Smartwatch 5</h3>
+                            <span class="product-price">37.31$</span>
+                            <button class="add-cart">Add to card</button>
+                        </div>
+                        <div class="card">
+                            <img class="product-img" src="/smartwatch/picture/david-svihovec-v8BDEj9bfcs-unsplash.jpg">
+                            <h3 class="product-name">Smartwatch 6</h3>
+                            <span class="product-price">46$</span>
+                            <button class="add-cart">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testmonial" id="testmonial">
+                <div class="container">
+                    <h4 class="testmonial-title">Testmonial</h4>
+                    <h2 class="testmonial-description">What our clients say about us</h2>
+                    <div class="monial-container">
+                        <div class="monial-card">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A blanditiis voluptas magni temporibus non rem veritatis sint quas deleniti! Maxime cumque iste, commodi ad porro aut amet qui. Laudantium, blanditiis!</p>
+                            <img src="/smartwatch/picture/James.jpg" alt="">
+                            <span>James Holan</span>
+                        </div>
+                        <div class="monial-card">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eum nostrum dolores, beatae aliquid iste minima impedit odio exercitationem aliquam et, commodi, illo ea. Unde provident sint distinctio doloribus repellendus.</p>
+                            <img src="/smartwatch/picture/Jessica.jpg" alt="">
+                            <span>Jessica Sanders</span>
+                        </div>
+                        <div class="monial-card">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ex nostrum quisquam repellat! Perferendis minima ad hic, laudantium temporibus numquam, esse odio soluta quas totam itaque eaque modi minus odit?</p>
+                            <img src="/smartwatch/picture/david.jpg" alt="">
+                            <span>David Johnson</span>
+                        </div>
+                    </div>
+                </div>
+          
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-wrapper">
+
+                    <div class="footer-content">
+                        <a href="#" class="logo">Shop<span>Watch</span></a>
+                        <p>Apple Watch and the<br>
+                            app on iPhone</p>
+                           <div class="footer-icons">
+                            <i class='bx bxl-facebook'></i>
+                            <i class='bx bxl-instagram'></i>
+                            <i class='bx bxl-twitter'></i>
+                        </div> 
+                    </div>
+
+                    <div class="footer-content">
+                        <ul>
+                            <li><p>Product</p></li>
+                            <li><a class="footer-link">About Us</a></li>
+                            <li><a class="footer-link">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-content">
+                        <ul>
+                            <li><p>Service</p></li>
+                            <li><a class="footer-link">Smart Watch</a></li>
+                            <li><a class="footer-link">Head Phone</a></li>
+                            <li><a class="footer-link">Home security</a></li>
+                            <li><a class="footer-link">Smart Lock</a></li> 
+                        </ul>
+                    </div>
+
+                    <div class="footer-content">
+                        <ul>
+                            <li><p>About Us</p></li>
+                            <li><a class="footer-link">Who we are</a></li>
+                            <li><a class="footer-link">Contact us</a></li>
+                            <li><a class="footer-link">Support</a></li>
+                            <li><a class="footer-link">FAQ</a></li> 
+                        </ul>
+                    </div>
+
+                  
+
+                </div>
+            </div>
+        
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/smartwatch/shop.js"></script>
+</body>
+</html>
